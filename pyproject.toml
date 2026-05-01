@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "safe-password-generator"
+version = "0.1.0"
+description = "A professional command-line and web-based secure password generator."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "streamlit==1.32.0",
+]
+
+[project.scripts]
+safe-password-gen = "safe_password_generator.cli.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
