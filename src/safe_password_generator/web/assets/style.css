@@ -1,0 +1,74 @@
+/* Custom modern CSS for Streamlit Password Generator */
+
+/* Styling for the main title with gradient */
+.title-text {
+    background: linear-gradient(90deg, #FF4B2B, #FF416C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}
+
+.subtitle-text {
+    text-align: center;
+    color: #a0a0a0;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+/* Glassmorphism card for the password output */
+.password-box {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    word-break: break-all;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button override for generate button */
+div.stButton > button {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    color: #1a1a1a !important;
+    font-weight: bold !important;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+div.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 201, 255, 0.4);
+    background: linear-gradient(90deg, #92FE9D 0%, #00C9FF 100%);
+}
+
+/* Customizing the slider */
+div.stSlider > div[data-baseweb="slider"] {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Error message styling */
+.error-msg {
+    color: #FF416C;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(255, 65, 108, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 65, 108, 0.3);
+}
